@@ -1,0 +1,55 @@
+#div0401{
+    text-align: center;     
+    color: white;
+}
+/* CONTACT WALA SECTION */
+.contact-container{
+    height: 100vh;
+    align-items: center;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;   }
+.contact-left{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 20px;    }
+.contact-left-title h2{
+    font-weight: 600;
+    color: rgb(255, 255, 255);
+    font-size: 40px;
+    margin-bottom: 5px;   }
+.contact-inputs{
+    width: 400px;
+    height: 50px;
+    border: none;
+    outline: none;
+    padding-left: 25px;
+    font-weight: 500;
+    color: #666;
+    border-radius: 50px;    }
+.contact-left textarea{
+    height: 140px;
+    padding-top: 15px;
+    border-radius: 20px;    }
+.contact-inputs:focus{
+    border: 2px solid #7e82ff;  }
+.contact-left button{
+    display: flex;
+    align-items: center;
+    padding: 15px 30px;
+    font-size: 16px;
+    color: #000000;
+    gap: 10px;
+    border: none;
+    border-radius: 50px;
+    background: linear-gradient(270deg, #2167e9, #9e93ff);
+    cursor: pointer;    }
+@media (max-width:800px) {
+    .contact-inputs{
+        width: 80vw;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+}

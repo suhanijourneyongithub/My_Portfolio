@@ -1,0 +1,183 @@
+<html>
+    <head>
+        <title>Portfolio</title>
+        <!-- TO CONNECT WITH CSS FILE -->
+        <link rel="stylesheet" href="styleRadheRadhe.css"> <!--Body and home page me jo work kiya hai-->
+        <link rel="stylesheet" href="styleRadheRadhe02.css"> <!--Second page me jo work kiya hai-->
+        <link rel="stylesheet" href="styleRadheRadhe03.css"> <!--Third page me jo work kiya hai-->
+        <link rel="stylesheet" href="styleRadheRadhe04.css"> <!--Fourth page me jo work kiya hai-->
+        <!-- PTA NHI KYU HAI YE -->
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- WRITING KE LIYE ON WHOLE BODY -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Playwrite+AU+VIC:wght@100..400&display=swap" rel="stylesheet">
+        <!-- LINKEDIN WAGERA KE IMAGES KE LIYE -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+    <body>
+        <div>
+
+            <!-- HEADER JO HAI LANDING PAGE KA -->
+            <header id = "Parent_div01">
+                <div id = "Child_div01"> 
+                    <!-- TRIPPLE LINES KE LIYE -->
+                    <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; </span>  
+                </div>
+                <nav class="nav">
+                    <h1 style = "justify-content: end;">My Portfolio</h1>
+                </nav>
+            </header>
+            <div id="mySidenav" class="sidenav">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                <a href = "#homepage" class="split">Home</a>
+                <a href = "#secondpage" class="split">About</a>
+                <a href = "#thirdpage" class="split">Project</a>
+                <a href = "#fourthpage" class="split">Contact</a>
+            </div>
+            <div class="containerr" onclick="myFunction(this)">
+                <div class="bar1"></div>
+                <div class="bar2"></div>
+                <div class="bar3"></div>
+            </div>
+            <script>
+                function openNav() {
+                    document.getElementById("mySidenav").style.width = "250px";
+                }
+                function closeNav() {
+                    document.getElementById("mySidenav").style.width = "0";
+                }
+                function myFunction(x) {
+                    x.classList.toggle("change");
+                }
+            </script>
+            <!------------------Header ho gya khtm------------------>
+            <!------------------HomePage ho gya suru---------------->
+            <section id = "homepage">
+                <div id = "photo">
+                    <!-- <img src = "https://media.licdn.com/dms/image/D4D03AQEBk0FY78lpaw/profile-displayphoto-shrink_800_800/0/1701204481647?e=2147483647&v=beta&t=Om_lG9VD-toTS8EGbEpcNsFvIU_vAmVLhUYllegbAQw"> Ye mene kiya hai jisse ki photo and text side by side aaye -->
+                     <img src = "my photo.jpeg">
+                </div>
+                <div id = "saman">
+                    <h1>Hello,<br>
+                    This is <spam style = "color: #00e1ff;">Suhani Sharma</spam><br>I am a <span id="element"></span></h1>
+                </div>
+            </section>
+            <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+            <script>
+                var typed = new Typed('#element', {
+                strings: ['Web Developer', 'Front-end Developer','Web-Designer'],
+                typeSpeed: 50,
+                });
+            </script>
+            <!------------------HomePage ho gya khtm---------------->
+            <!------------------SecondPage ho gya suru---------------->
+            <section id = "secondpage">
+                <hr style = "margin: 0px 30px;">
+                <h1>About</h1>         
+                    <div class="timeline">
+                        <div class="container left">
+                          <div class="content">
+                            <h2>2024</h2>
+                            <p>I deep dive in PYTHON and learned to build some mini projects like Library Management System and quiz games and many more. Then i started my front-end's journey and learned HTML and CSS and together I completed my 5th CANVA design and now my journey to backend is started with DJANGO.</p>
+                          </div>
+                        </div>
+                        <div class="container right">
+                          <div class="content">
+                            <h2>2023</h2>
+                            <p>I was aware about what is python, linkedin, canva, git or github but only theoriticallya and have no logic building experience but was still good enough in Html and then i started my coding journey with C programming language.</p>
+                          </div>
+                        </div>
+                    </div>
+                <hr>
+            </section>
+            <!------------------SecondPage ho gya khtm---------------->
+            <!------------------ThirdPage ho gya suru---------------->
+            <section id = "thirdpage">
+                <h1>Projects</h1>
+                <div class="slideshow-container">
+
+                    <div class="mySlides fade">
+                      <div class="numbertext">1 / 3</div>
+                      <img src="Project_01.png" style="width:100%">
+                      <div class="text"><a href = "https://suhanijourneyongithub.github.io/deployment_trail/" style = "text-decoration: none;">project 01</a></div>
+                    </div>
+                    
+                    <div class="mySlides fade">
+                      <div class="numbertext">2 / 3</div>
+                      <img src="Project_02.png" style="width:100%">
+                      <div class="text"><a href = "https://suhanijourneyongithub.github.io/Ready_set_eat/ " style = "text-decoration: none;">project 02</a></div>
+                    </div>
+                    
+                    <div class="mySlides fade">
+                      <div class="numbertext">3 / 3</div>
+                      <img src="Project_01.png" style="width:100%">
+                      <div class="text">Project 03</div>
+                    </div>
+                    
+                    <a class="prev" onclick="plusSlides(-1)">❮</a>
+                    <a class="next" onclick="plusSlides(1)">❯</a>
+                    
+                    </div>
+                    <br>
+                    
+                    <div style="text-align:center">
+                      <span class="dot" onclick="currentSlide(1)"></span> 
+                      <span class="dot" onclick="currentSlide(2)"></span> 
+                      <span class="dot" onclick="currentSlide(3)"></span> 
+                    </div>
+                    
+                    <script>
+                    let slideIndex = 1;
+                    showSlides(slideIndex);
+                    
+                    function plusSlides(n) {
+                      showSlides(slideIndex += n);
+                    }
+                    
+                    function currentSlide(n) {
+                      showSlides(slideIndex = n);
+                    }
+                    
+                    function showSlides(n) {
+                      let i;
+                      let slides = document.getElementsByClassName("mySlides");
+                      let dots = document.getElementsByClassName("dot");
+                      if (n > slides.length) {slideIndex = 1}    
+                      if (n < 1) {slideIndex = slides.length}
+                      for (i = 0; i < slides.length; i++) {
+                        slides[i].style.display = "none";  
+                      }
+                      for (i = 0; i < dots.length; i++) {
+                        dots[i].className = dots[i].className.replace(" active", "");
+                      }
+                      slides[slideIndex-1].style.display = "block";  
+                      dots[slideIndex-1].className += " active";
+                    }
+                    </script>
+            </section>
+            <!------------------ThirdPage ho gya khtm---------------->
+            <!------------------FourthPage ho gya suru---------------->
+            <hr>
+            <Section id = "fourthpage">
+                <div id = "div0401">         
+                    <h1>Contact</h1>   
+                    <div class = "contact-container">
+                        <form action="https://api.web3forms.com/submit" method="POST" class = "contact-left">
+                            <div class = "contact-left-title">
+                                <h2>Get in Touch</h2>
+                            </div>
+                            <input type="hidden" name="access_key" value="62702526-f08f-45bb-b171-cc208a1e0137">
+                            <input type = "text" name = "name" placeholder = "Your Name" class = "contact-inputs" required>
+                            <input type = "text" name = "email" placeholder = "Your Email" class = "contact-inputs" required>
+                            <textarea name = "message" placeholder = "Your Message" class = "contact-inputs" required></textarea>
+                            <button type = "submit">Submit</button>
+                        </form>
+                        <div class = "conatct-right">   
+                        </div>
+                    </div>
+                </div>
+            </Section>
+            <!-- 382 -->
+    </body>
+</html>
